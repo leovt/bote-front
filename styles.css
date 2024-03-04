@@ -1,0 +1,36 @@
+/* styles.css */
+
+body {
+  margin: 0;
+  display: flex;
+}
+
+#sidebar {
+  width: 20%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#content {
+  flex: 1;
+  box-sizing: border-box;
+}
+
+#mainSvg {
+  max-width: 80vw;
+  max-height: 100vh;
+}
+
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translate(0px,0px);
+  }
+  50% {
+    transform: translate(-0.05px,-0.1px);
+  }
+}
+
+.flying {
+  animation: moveUpDown 3s infinite ease-in-out;
+}
